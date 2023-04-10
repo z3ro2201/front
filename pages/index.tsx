@@ -22,6 +22,7 @@ export default function Home({images, textColor} : any) {
         <meta property="og:url" content="2ero.dev" />
         <meta property="og:description" content="2ERO's home" />
         <meta property="og:site_name" content="2ero.dev" />
+        <meta property="og:image" content="https://2ero.dev/og-image.png" />
         <meta property="og:locale" content="ko_KR" />
       </Head>
       <div className="absolute w-full h-full -z-50">
