@@ -25,7 +25,7 @@ export default function Home({images, textColor} : any) {
         <meta property="og:locale" content="ko_KR" />
       </Head>
       <div className="absolute w-full h-full -z-50">
-        <Image src={images.src.original} fill alt="image"/>
+        <img src={images.src.original} className="w-full h-full" alt="image"/>
       </div>
       <div className="absolute w-full h-full -z-40 bg-[url('../public/overlay-pattern.png')] bg-fixed bg-bottom-left bg-no-repeat ">
       </div>
