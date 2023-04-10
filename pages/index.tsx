@@ -63,8 +63,10 @@ export default function Home({images, textColor} : any) {
 }
 
 export async function getServerSideProps(context:any) {
+  const category = ['airport', 'sky', 'natural', 'water', 'sea', 'boat', 'cloudy', 'space', 'river', 'earth'];
+  const getCategory:string = category[Math.floor(Math.random() * category.length)];
   const apiKey = process.env.NEXT_PUBLIC_PEXCELS_KEY;
-  const apiUrl = process.env.NEXT_PUBLIC_PEXCELS_URL + 'nature';
+  const apiUrl = process.env.NEXT_PUBLIC_PEXCELS_URL + getCategory;
   const headers = {
     Authorization: apiKey as string
   }
